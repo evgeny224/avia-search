@@ -1,0 +1,117 @@
+.search{
+    background-color:white;
+}
+.aviaTravel{
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.aviaTravelHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background-color:#2196f3;
+    height: 50px;
+}
+
+.aviaTravelDestenation{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+}
+
+.aviaTravelArrow{
+    width: 30px;
+    height: 15px;
+    color: white;
+}
+
+.aviaTravelDestenationCode{
+    color: #2196f3;
+}
+
+.aviaTravelDestinationLine{
+    margin: auto 20px;
+    border: 0.5px solid rgb(230 229 229); 
+}
+
+.aviaTravelTime{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+}
+
+.aviaTravelTimeCenter{
+    text-align: center;
+}
+
+.aviaTravelTimeClock{
+    width: 18px;
+    height: 18px;
+}
+
+.aviaTravelTimeOurs{
+    padding: 5px;
+}
+
+.aviaTravelTimeDays{
+    padding: 5px;
+    color: #2196f3;
+}
+
+.aviaTravelTransfer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 25px;
+}
+
+.aviaTravelTransferLine{
+    width: 620px;
+    height: 20px;
+}
+
+.aviaTravelCenter{
+    color: orange;
+}
+
+.aviaTravelCompany{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    height: 50px;
+}
+
+.aviaTravelCompanyName{
+    padding: ;
+}
+
+.aviaTravelBluyLine{
+    border: 1px solid #2196f3; 
+}
+
+.aviaTravelArrival{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+}
+
+.aviaTravelArrivalTime{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+}
+
+.aviaTravelButton{
+    width: 100%;
+    height: 50px;
+    color: white;
+    background-color: orange;
+    border: 0;
+}
