@@ -2,60 +2,61 @@ import React from "react";
 import arrow from "../../Assets/Images/arrow.png";
 import clock from "../../Assets/Images/clock.png"
 import line from "../../Assets/Images/line.png";
+import { format } from 'date-fns';
+import ru from "date-fns/locale/ru";
 import style from "./Search.module.css";
 
 
     const Search = (props) => {
+        debugger;
         return(
             <div className = {style.search}>
-                <div className = {style.aviaTravel}>
+                {props.searchPage.flights.map( travel => {
+                    return <div className = {style.aviaTravel}>
                     <div className = {style.aviaTravelHeader}>
                         <div className = {style.aviaTravelTitle}>
-                            LOT POLISHAIRLINES
+                            {travel.flight.carrier.caption}
                         </div>
                         <div className = {style.aviaTravelCounts}>
                             <div>
-                                21049 P
+                                {travel.flight.price.total.amount}  {travel.flight.price.total.currencyCode}
                             </div>
-                            <div>
+                            <div className = {style.aviaTravelCount}>
                                 Стоимость для одного взрослого пасажира
                             </div>
                         </div>
                     </div>
                     <div className = {style.aviaTravelDestenation}>
                         <div>
-                            Москва, 
+                            {travel.flight.legs[0].segments[0].departureCity.caption},
                         </div>
                         <div>
-                            ШЕРЕМЕТЬЕВО 
+                            {travel.flight.legs[0].segments[0].departureAirport.caption}
                         </div>
                         <div className = {style.aviaTravelDestenationCode}>
-                            (SVO)
+                            ({travel.flight.legs[0].segments[0].departureAirport.uid})
                         </div>
                         <div>
                             <img src={arrow} alt="arrow" className = {style.aviaTravelArrow}/>
                         </div>
                         <div>
-                            ЛОНДОН, 
+                            {travel.flight.legs[0].segments[0].arrivalCity.caption}, 
                         </div>
                         <div>
-                            Лондон, 
-                        </div>
-                        <div>
-                            Хитроу
+                            {travel.flight.legs[0].segments[0].arrivalAirport.caption},
                         </div>
                         <div className = {style.aviaTravelDestenationCode}>
-                            (LHR)
+                            ({travel.flight.legs[0].segments[0].arrivalAirport.uid})
                         </div>
                     </div>
                     <hr className = {style.aviaTravelDestinationLine}/>
                     <div className = {style.aviaTravelTime}>
                         <div>
                             <span className = {style.aviaTravelTimeOurs}>
-                                20:40
+                                {format(new Date(travel.flight.legs[0].segments[0].departureDate), 'kk:mm')}
                             </span>
                             <span className = {style.aviaTravelTimeDays}>
-                                18 авг.вт
+                                {format(new Date(travel.flight.legs[0].segments[0].departureDate),  'dd MMM EEEEEE', {locale: ru}) }
                             </span>
                         </div>
                         <div className = {style.aviaTravelTimeCenter}>
@@ -63,15 +64,15 @@ import style from "./Search.module.css";
                                 <img src={clock} alt="clock" className = {style.aviaTravelTimeClock}/>
                             </span>
                             <span>
-                                14 ч 45 мин
+                                {Math.floor(travel.flight.legs[0].segments[0].travelDuration / 60)} ч {Math.floor(travel.flight.legs[0].segments[0].travelDuration % 60)} мин
                             </span>
                         </div>
                         <div>
                             <span className = {style.aviaTravelTimeDays}>
-                                19 авг. ср
+                                {format(new Date(travel.flight.legs[0].segments[0].arrivalDate),  'dd MMM EEEEEE', {locale: ru}) }
                             </span>
                             <span className = {style.aviaTravelTimeOurs}>
-                                09:25
+                                {format(new Date(travel.flight.legs[0].segments[0].arrivalDate), 'kk:mm')}
                             </span>
                         </div>
                     </div>
@@ -88,44 +89,41 @@ import style from "./Search.module.css";
                     </div>
                     <div className = {style.aviaTravelCompany}>
                         <div className = {style.aviaTravelCompanyName}>
-                            Рейс выполняет: LOT Polish Airlines
+                            Рейс выполняет: {travel.flight.carrier.caption}
                         </div>
                     </div>
                     <hr className = {style.aviaTravelBluyLine}/>
                     <div className = {style.aviaTravelArrival}>
                         <div>
-                            ЛОНДОН, 
+                            {travel.flight.legs[0].segments[0].arrivalCity.caption}, 
                         </div>
                         <div>
-                            Лондон, 
-                        </div>
-                        <div>
-                            Хитроу
+                            {travel.flight.legs[0].segments[0].arrivalAirport.caption},
                         </div>
                         <div className = {style.aviaTravelDestenationCode}>
-                            (LHR)
+                            ({travel.flight.legs[0].segments[0].arrivalAirport.uid})
                         </div>
                         <div>
                             <img src={arrow} alt="arrow" className = {style.aviaTravelArrow}/>
                         </div>
                         <div>
-                            Москва, 
+                            {travel.flight.legs[0].segments[0].departureCity.caption}, 
                         </div>
                         <div>
-                            ШЕРЕМЕТЬЕВО 
+                            {travel.flight.legs[0].segments[0].departureAirport.caption}
                         </div>
                         <div className = {style.aviaTravelDestenationCode}>
-                            (SVO)
+                            ({travel.flight.legs[0].segments[0].departureAirport.uid})
                         </div>
                     </div>
                     <hr className = {style.aviaTravelDestinationLine}/>
                     <div className = {style.aviaTravelArrivalTime}>
                         <div>
                             <span className = {style.aviaTravelTimeOurs}>
-                                18:10
+                                {format(new Date(travel.flight.legs[0].segments[0].departureDate), 'kk:mm')}
                             </span>
                             <span className = {style.aviaTravelTimeDays}>
-                                19 авг.ср
+                                {format(new Date(travel.flight.legs[0].segments[0].departureDate),  'dd MMM EEEEEE', {locale: ru}) }
                             </span>
                         </div>
                         <div className = {style.aviaTravelTimeCenter}>
@@ -133,15 +131,15 @@ import style from "./Search.module.css";
                                 <img src={clock} alt="clock" className = {style.aviaTravelTimeClock}/>
                             </span>
                             <span>
-                                23 ч 35 мин
+                                {Math.floor(travel.flight.legs[0].segments[0].travelDuration / 60)} ч {Math.floor(travel.flight.legs[0].segments[0].travelDuration % 60)} мин
                             </span>
                         </div>
                         <div>
                             <span className = {style.aviaTravelTimeDays}>
-                                20 авг. чт
+                                {format(new Date(travel.flight.legs[0].segments[0].arrivalDate),  'dd MMM EEEEEE', {locale: ru}) }
                             </span>
                             <span className = {style.aviaTravelTimeOurs}>
-                                19:45
+                                {format(new Date(travel.flight.legs[0].segments[0].arrivalDate), 'kk:mm')}
                             </span>
                         </div>
                     </div>
@@ -158,11 +156,12 @@ import style from "./Search.module.css";
                     </div>
                     <div className = {style.aviaTravelCompany}>
                         <div className = {style.aviaTravelCompanyName}>
-                            Рейс выполняет: LOT Polish Airlines
+                            Рейс выполняет: {travel.flight.carrier.caption}
                         </div>
                     </div>
                         <button className = {style.aviaTravelButton}>ВЫБРАТЬ</button>
-                </div>
+                </div>})}
+                
             </div>
         )
     }

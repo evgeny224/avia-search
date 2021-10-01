@@ -1,5 +1,5 @@
 import React from "react";
-import Search from "../../Components/Search/Search";
+import SearchContainer from "../../Components/Search/SearchContainer";
 import Sidebar from "../../Components/Sidebar/Sidebar";
 import style from "./SearchPage.module.css";
 
@@ -8,7 +8,7 @@ import style from "./SearchPage.module.css";
         return(
             <div className = {style.searcPage}>
                 <Sidebar className = {style.sidebarComponent}/>
-                <Search className = {style.searcComponent}/>
+                <SearchContainer className = {style.searcComponent}/>
             </div>
         )
     }
