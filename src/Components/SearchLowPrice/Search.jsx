@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import arrow from "../../Assets/Images/arrow.png";
 import clock from "../../Assets/Images/clock.png"
 import line from "../../Assets/Images/line.png";
@@ -10,11 +10,25 @@ import style from "./Search.module.css";
     const Search = (props) => {
 
 
-        let state = props.searchPage.flights;
+
+        const [ dataFromState ] = useState(props.searchPage.flights);
+
+
+        let lowPriveFilter = dataFromState.sort(function(a, b) {
+            if (a.flight.price.total.amount > b.flight.price.total.amount) {
+                return 1;
+            }
+            if (a.flight.price.total.amount < b.flight.price.total.amount) {
+                return -1;
+            }
+            return 0;
+        })
+    
+
     
         return(
             <div className = {style.search}>
-                {state.map( travel => {
+                {lowPriveFilter.map( travel => {
                     return <div className = {style.aviaTravel}>
                     <div className = {style.aviaTravelHeader}>
                         <div className = {style.aviaTravelTitle}>
