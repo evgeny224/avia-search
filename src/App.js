@@ -5,6 +5,8 @@ import { Route } from "react-router-dom";
 import SearchLowPrice from "./Components/SearchLowPrice/SearchLowPrice";
 import SearchHeighPrice from "./Components/SearchHeightPrice/SearchHeighPrice";
 import SearchTrevelTime from "./Components/SearchTrevelTime/SearchTrevelTime";
+import SearchTransfer from "./Components/SearchTransfer/SearchTransfer";
+import SearchNoTransfer from "./Components/SearchNoTransfer/SearchNoTransfer";
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
                 <Route path = "/lowprice" render = {() => <SearchLowPrice />}  />
                 <Route path = "/heighprice" render = {() => <SearchHeighPrice />}  />
                 <Route path = "/traveltime" render = {() => <SearchTrevelTime />}  />
+                <Route path = "/transfer" render = {() => <SearchTransfer />}  />
+                <Route path = "/notransfer" render = {() => <SearchNoTransfer />}  />
           </div>
   );
 }

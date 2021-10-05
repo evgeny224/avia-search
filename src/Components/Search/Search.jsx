@@ -84,7 +84,7 @@ import style from "./Search.module.css";
                             <img src={line} alt="line" className = {style.aviaTravelTransferLine}/>
                         </div>
                         <div className = {style.aviaTravelCenter}>
-                            1 пересадка
+                            {travel.flight.legs[0].segments[0].stops === 1 ? "1 пересадка" : "Без пересадок"}
                         </div>
                         <div>
                             <img src={line} alt="line" className = {style.aviaTravelTransferLine}/>
@@ -151,7 +151,7 @@ import style from "./Search.module.css";
                             <img src={line} alt="line" className = {style.aviaTravelTransferLine}/>
                         </div>
                         <div className = {style.aviaTravelCenter}>
-                            1 пересадка
+                            {travel.flight.legs[0].segments[0].stops === 1 ? "1 пересадка" : "Без пересадок"}
                         </div>
                         <div>
                             <img src={line} alt="line" className = {style.aviaTravelTransferLine}/>

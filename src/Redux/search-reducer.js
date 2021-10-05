@@ -135,7 +135,7 @@ const SET_TRAVELS = "SET_TRAVELS";
                                              [
                                              ],
                                           "departureDate" : "2020-08-18T06:10:00",
-                                          "stops" : 0,
+                                          "stops" : 1,
                                           "servicesDetails" :
                                              {
                                                 "freeCabinLuggage" :
@@ -209,7 +209,7 @@ const SET_TRAVELS = "SET_TRAVELS";
                                              [
                                              ],
                                           "departureDate" : "2020-08-18T16:00:00",
-                                          "stops" : 0,
+                                          "stops" : 1,
                                           "servicesDetails" :
                                              {
                                                 "freeCabinLuggage" :
@@ -289,7 +289,7 @@ const SET_TRAVELS = "SET_TRAVELS";
                                              [
                                              ],
                                           "departureDate" : "2020-08-19T17:35:00",
-                                          "stops" : 0,
+                                          "stops" : 1,
                                           "servicesDetails" :
                                              {
                                                 "freeCabinLuggage" :
@@ -363,7 +363,7 @@ const SET_TRAVELS = "SET_TRAVELS";
                                              [
                                              ],
                                           "departureDate" : "2020-08-20T13:55:00",
-                                          "stops" : 0,
+                                          "stops" : 1,
                                           "servicesDetails" :
                                              {
                                                 "freeCabinLuggage" :
@@ -586,7 +586,7 @@ const SET_TRAVELS = "SET_TRAVELS";
                                                [
                                                ],
                                             "departureDate" : "2020-08-18T17:00:00",
-                                            "stops" : 0,
+                                            "stops" : 1,
                                             "servicesDetails" :
                                                {
                                                   "freeCabinLuggage" :

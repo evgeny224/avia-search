@@ -18,6 +18,15 @@ import {  useHistory  } from "react-router-dom";
         const price3 = () => {
             history.push("/traveltime")
     }
+
+    const oneTransfer = () => {
+        history.push("/transfer")
+}
+
+    const noTransfer = () => {
+        history.push("/notransfer")
+    }
+
         return(
             <div className = {style.sidebar}>
                 <div className = {style.title}>
@@ -32,6 +41,16 @@ import {  useHistory  } from "react-router-dom";
                 <div className = {style.input}>
                     <input type="radio" name="sort" onClick ={price3}/> - по по времени в пути.
                 </div>
+                <div>
+                    Фильтровать
+                </div>
+                <label className = {style.inputFiltr}>
+                    <input className = {style.inputFiltrinInner } type="radio" name="filtr" onClick ={oneTransfer}/> - 1 пересадка.
+                </label>
+                <br />
+                <label className = {style.inputFiltr}>
+                    <input type="radio" name="filtr" className = {style.inputFiltrinInner } onClick ={noTransfer}/> - без пересадок.
+                </label>
             </div>
         )
     }
