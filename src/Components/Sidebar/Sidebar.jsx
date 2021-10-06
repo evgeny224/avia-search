@@ -27,6 +27,14 @@ import {  useHistory  } from "react-router-dom";
         history.push("/notransfer")
     }
 
+    const polisCompany = () => {
+        history.push("/polish")
+    }
+
+    const airflotCompany = () => {
+        history.push("/airflot")
+    }
+
         return(
             <div className = {style.sidebar}>
                 <div className = {style.title}>
@@ -41,7 +49,7 @@ import {  useHistory  } from "react-router-dom";
                 <div className = {style.input}>
                     <input type="radio" name="sort" onClick ={price3}/> - по по времени в пути.
                 </div>
-                <div>
+                <div className = {style.filtr}>
                     Фильтровать
                 </div>
                 <label className = {style.inputFiltr}>
@@ -50,6 +58,23 @@ import {  useHistory  } from "react-router-dom";
                 <br />
                 <label className = {style.inputFiltr}>
                     <input type="radio" name="filtr" className = {style.inputFiltrinInner } onClick ={noTransfer}/> - без пересадок.
+                </label>
+                <div className = {style.amount}>Цена</div>
+                <div className = {style.input}>
+                    От <input type="text" name="sort"  />
+                </div>
+                <div className = {style.input}>
+                    До <input type="text" name="sort" /> 
+                </div>
+                <div className = {style.filtr}>
+                    Авиакампании
+                </div>
+                <label className = {style.inputFiltr}>
+                    <input className = {style.inputFiltrinInner } type="radio" name="aviaCompany" onClick ={polisCompany}/> LOT Polish Airlines
+                </label>
+                <br />
+                <label className = {style.inputFiltr}>
+                    <input type="radio" name="aviaCompany" className = {style.inputFiltrinInner } onClick ={airflotCompany}/> Аэрофлот
                 </label>
             </div>
         )

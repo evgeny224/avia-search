@@ -12,13 +12,9 @@
     text-align: left;
     padding-top: 5px;
     padding-left: 10px;
+    padding-bottom: 10px;
 }
 
-/* .inputFiltr{
-    display: inline-block;
-    padding: 5px 10px;
-    cursor: pointer;
-} */
 
 .inputFiltrinInner {
     box-sizing: border-box;
@@ -34,3 +30,20 @@
     background: #333;
 }
 
+.filtr{
+    text-align: left;
+    padding-top: 50px;
+    padding-left: 50px;
+}
+
+.inputFiltr{
+    padding: 10px;
+    
+}
+
+.amount{
+    text-align: left;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-bottom: 10px;
+}

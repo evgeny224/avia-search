@@ -1,4 +1,6 @@
 const SET_TRAVELS = "SET_TRAVELS";
+const SET_PRICE_FROM = "SET_PRICE_FROM";
+const SET_PRICE_UP = "SET_PRICE_UP";
 
 
     let initialState = {
@@ -2252,7 +2254,1633 @@ const SET_TRAVELS = "SET_TRAVELS";
                                  }
                            },
                 },
-            ]
+                {
+                  "hasExtendedFare" : false,
+                  "flight" :
+                     {
+                        "carrier" :
+                           {
+                              "uid" : "LO",
+                              "caption" : "LOT Polish Airlines",
+                              "airlineCode" : "LO"
+                           },
+                        "price" :
+                           {
+                              "total" :
+                                 {
+                                    "amount" : "21049",
+                                    "currency" : "руб.",
+                                    "currencyCode" : "RUB"
+                                 },
+                              "totalFeeAndTaxes" :
+                                 {
+                                    "amount" : "10259.00",
+                                    "currency" : "руб.",
+                                    "currencyCode" : "RUB"
+                                 },
+                              "rates" :
+                                 {
+                                    "totalUsd" :
+                                       {
+                                          "amount" : "261.48",
+                                          "currencyCode" : "EUR"
+                                       },
+                                    "totalEur" :
+                                       {
+                                          "amount" : "296.47",
+                                          "currencyCode" : "USD"
+                                       }
+                                 },
+                              "passengerPrices" :
+                                 [
+                                    {
+                                       "total" :
+                                          {
+                                             "amount" : "21049.00",
+                                             "currency" : "руб.",
+                                             "currencyCode" : "RUB"
+                                          },
+                                       "passengerType" :
+                                          {
+                                             "uid" : "ADULT",
+                                             "caption" : "Взрослый"
+                                          },
+                                       "singlePassengerTotal" :
+                                          {
+                                             "amount" : "21049.00",
+                                             "currency" : "руб.",
+                                             "currencyCode" : "RUB"
+                                          },
+                                       "passengerCount" : 1,
+                                       "tariff" :
+                                          {
+                                             "amount" : "10790.00",
+                                             "currency" : "руб.",
+                                             "currencyCode" : "RUB"
+                                          },
+                                       "feeAndTaxes" :
+                                          {
+                                             "amount" : "10259.00",
+                                             "currency" : "руб.",
+                                             "currencyCode" : "RUB"
+                                          }
+                                    }
+                                 ]
+                           },
+                        "servicesStatuses" :
+                           {
+                              "baggage" :
+                                 {
+                                    "uid" : "OFF",
+                                    "caption" : "Недоступно"
+                                 },
+                              "exchange" :
+                                 {
+                                    "uid" : "PAID",
+                                    "caption" : "Платно"
+                                 },
+                              "refund" :
+                                 {
+                                    "uid" : "OFF",
+                                    "caption" : "Недоступно"
+                                 }
+                           },
+                        "legs" :
+                           [
+                              {
+                                 "duration" : 885,
+                                 "segments" :
+                                    [
+                                       {
+                                          "classOfServiceCode" : "V",
+                                          "classOfService" :
+                                             {
+                                                "uid" : "ECONOMY",
+                                                "caption" : "Эконом"
+                                             },
+                                          "departureAirport" :
+                                             {
+                                                "uid" : "SVO",
+                                                "caption" : "ШЕРЕМЕТЬЕВО"
+                                             },
+                                          "departureCity" :
+                                             {
+                                                "uid" : "MOW",
+                                                "caption" : "Москва"
+                                             },
+                                          "aircraft" :
+                                             {
+                                                "uid" : "Е75",
+                                                "caption" : "ЭМБРАЕР 175"
+                                             },
+                                          "travelDuration" : 135,
+                                          "arrivalCity" :
+                                             {
+                                                "uid" : "WAW",
+                                                "caption" : "ВАРШАВА (ФРЕДЕРИК ШОПЕН)"
+                                             },
+                                          "arrivalDate" : "2020-08-18T21:55:00",
+                                          "flightNumber" : "678",
+                                          "techStopInfos" :
+                                             [
+                                             ],
+                                          "departureDate" : "2020-08-18T20:40:00",
+                                          "stops" : 0,
+                                          "servicesDetails" :
+                                             {
+                                                "freeCabinLuggage" :
+                                                   {
+                                                   },
+                                                "paidCabinLuggage" :
+                                                   {
+                                                   },
+                                                "tariffName" : "ECONOMY SAVER",
+                                                "fareBasis" :
+                                                   {
+                                                      "ADULT" : "VSAVP0"
+                                                   },
+                                                "freeLuggage" :
+                                                   {
+                                                      "ADULT" :
+                                                         {
+                                                            "nil" : true
+                                                         }
+                                                   },
+                                                "paidLuggage" :
+                                                   {
+                                                   }
+                                             },
+                                          "airline" :
+                                             {
+                                                "uid" : "LO",
+                                                "caption" : "LOT Polish Airlines",
+                                                "airlineCode" : "LO"
+                                             },
+                                          "starting" : true,
+                                          "arrivalAirport" :
+                                             {
+                                                "uid" : "WAW",
+                                                "caption" : "ВАРШАВА (ФРЕДЕРИК ШОПЕН)"
+                                             }
+                                       },
+                                       {
+                                          "classOfServiceCode" : "V",
+                                          "classOfService" :
+                                             {
+                                                "uid" : "ECONOMY",
+                                                "caption" : "Эконом"
+                                             },
+                                          "departureAirport" :
+                                             {
+                                                "uid" : "WAW",
+                                                "caption" : "ВАРШАВА (ФРЕДЕРИК ШОПЕН)"
+                                             },
+                                          "departureCity" :
+                                             {
+                                                "uid" : "WAW",
+                                                "caption" : "ВАРШАВА (ФРЕДЕРИК ШОПЕН)"
+                                             },
+                                          "aircraft" :
+                                             {
+                                                "uid" : "Е95",
+                                                "caption" : "ЭМБРАЕР 195"
+                                             },
+                                          "travelDuration" : 175,
+                                          "arrivalCity" :
+                                             {
+                                                "uid" : "LON",
+                                                "caption" : "ЛОНДОН"
+                                             },
+                                          "arrivalDate" : "2020-08-19T09:25:00",
+                                          "flightNumber" : "281",
+                                          "techStopInfos" :
+                                             [
+                                             ],
+                                          "departureDate" : "2020-08-19T07:30:00",
+                                          "stops" : 0,
+                                          "servicesDetails" :
+                                             {
+                                                "freeCabinLuggage" :
+                                                   {
+                                                   },
+                                                "paidCabinLuggage" :
+                                                   {
+                                                   },
+                                                "tariffName" : "ECONOMY SAVER",
+                                                "fareBasis" :
+                                                   {
+                                                      "ADULT" : "VSAVP0"
+                                                   },
+                                                "freeLuggage" :
+                                                   {
+                                                      "ADULT" :
+                                                         {
+                                                            "nil" : true
+                                                         }
+                                                   },
+                                                "paidLuggage" :
+                                                   {
+                                                   }
+                                             },
+                                          "airline" :
+                                             {
+                                                "uid" : "LO",
+                                                "caption" : "LOT Polish Airlines",
+                                                "airlineCode" : "LO"
+                                             },
+                                          "starting" : false,
+                                          "arrivalAirport" :
+                                             {
+                                                "uid" : "LHR",
+                                                "caption" : "Лондон, Хитроу"
+                                             }
+                                       }
+                                    ]
+                              },
+                              {
+                                 "duration" : 1415,
+                                 "segments" :
+                                    [
+                                       {
+                                          "classOfServiceCode" : "V",
+                                          "classOfService" :
+                                             {
+                                                "uid" : "ECONOMY",
+                                                "caption" : "Эконом"
+                                             },
+                                          "departureAirport" :
+                                             {
+                                                "uid" : "LHR",
+                                                "caption" : "Лондон, Хитроу"
+                                             },
+                                          "departureCity" :
+                                             {
+                                                "uid" : "LON",
+                                                "caption" : "ЛОНДОН"
+                                             },
+                                          "aircraft" :
+                                             {
+                                                "uid" : "Е95",
+                                                "caption" : "ЭМБРАЕР 195"
+                                             },
+                                          "travelDuration" : 155,
+                                          "arrivalCity" :
+                                             {
+                                                "uid" : "WAW",
+                                                "caption" : "ВАРШАВА (ФРЕДЕРИК ШОПЕН)"
+                                             },
+                                          "arrivalDate" : "2020-08-19T21:45:00",
+                                          "flightNumber" : "280",
+                                          "techStopInfos" :
+                                             [
+                                             ],
+                                          "departureDate" : "2020-08-19T18:10:00",
+                                          "stops" : 0,
+                                          "servicesDetails" :
+                                             {
+                                                "freeCabinLuggage" :
+                                                   {
+                                                   },
+                                                "paidCabinLuggage" :
+                                                   {
+                                                   },
+                                                "tariffName" : "ECONOMY SAVER",
+                                                "fareBasis" :
+                                                   {
+                                                      "ADULT" : "VSAVP0"
+                                                   },
+                                                "freeLuggage" :
+                                                   {
+                                                      "ADULT" :
+                                                         {
+                                                            "nil" : true
+                                                         }
+                                                   },
+                                                "paidLuggage" :
+                                                   {
+                                                   }
+                                             },
+                                          "airline" :
+                                             {
+                                                "uid" : "LO",
+                                                "caption" : "LOT Polish Airlines",
+                                                "airlineCode" : "LO"
+                                             },
+                                          "starting" : true,
+                                          "arrivalAirport" :
+                                             {
+                                                "uid" : "WAW",
+                                                "caption" : "ВАРШАВА (ФРЕДЕРИК ШОПЕН)"
+                                             }
+                                       },
+                                       {
+                                          "classOfServiceCode" : "V",
+                                          "classOfService" :
+                                             {
+                                                "uid" : "ECONOMY",
+                                                "caption" : "Эконом"
+                                             },
+                                          "departureAirport" :
+                                             {
+                                                "uid" : "WAW",
+                                                "caption" : "ВАРШАВА (ФРЕДЕРИК ШОПЕН)"
+                                             },
+                                          "departureCity" :
+                                             {
+                                                "uid" : "WAW",
+                                                "caption" : "ВАРШАВА (ФРЕДЕРИК ШОПЕН)"
+                                             },
+                                          "aircraft" :
+                                             {
+                                                "uid" : "Е75",
+                                                "caption" : "ЭМБРАЕР 175"
+                                             },
+                                          "travelDuration" : 130,
+                                          "arrivalCity" :
+                                             {
+                                                "uid" : "MOW",
+                                                "caption" : "Москва"
+                                             },
+                                          "arrivalDate" : "2020-08-20T19:45:00",
+                                          "flightNumber" : "677",
+                                          "techStopInfos" :
+                                             [
+                                             ],
+                                          "departureDate" : "2020-08-20T16:35:00",
+                                          "stops" : 0,
+                                          "servicesDetails" :
+                                             {
+                                                "freeCabinLuggage" :
+                                                   {
+                                                   },
+                                                "paidCabinLuggage" :
+                                                   {
+                                                   },
+                                                "tariffName" : "ECONOMY SAVER",
+                                                "fareBasis" :
+                                                   {
+                                                      "ADULT" : "VSAVP0"
+                                                   },
+                                                "freeLuggage" :
+                                                   {
+                                                      "ADULT" :
+                                                         {
+                                                            "nil" : true
+                                                         }
+                                                   },
+                                                "paidLuggage" :
+                                                   {
+                                                   }
+                                             },
+                                          "airline" :
+                                             {
+                                                "uid" : "LO",
+                                                "caption" : "LOT Polish Airlines",
+                                                "airlineCode" : "LO"
+                                             },
+                                          "starting" : false,
+                                          "arrivalAirport" :
+                                             {
+                                                "uid" : "SVO",
+                                                "caption" : "ШЕРЕМЕТЬЕВО"
+                                             }
+                                       }
+                                    ]
+                              }
+                           ],
+                        "exchange" :
+                           {
+                              "ADULT" :
+                                 {
+                                    "exchangeableBeforeDeparture" : true,
+                                    "exchangeAfterDeparture" :
+                                       {
+                                          "amount" : "5635",
+                                          "currency" : "руб.",
+                                          "currencyCode" : "RUB"
+                                       },
+                                    "exchangeBeforeDeparture" :
+                                       {
+                                          "amount" : "5635",
+                                          "currency" : "руб.",
+                                          "currencyCode" : "RUB"
+                                       },
+                                    "exchangeableAfterDeparture" : true
+                                 }
+                           },
+                        "isTripartiteContractDiscountApplied" : false,
+                        "international" : false,
+                        "seats" :
+                           [
+                              {
+                                 "count" : 1,
+                                 "type" :
+                                    {
+                                       "uid" : "ADULT",
+                                       "caption" : "Взрослый"
+                                    }
+                              }
+                           ],
+                        "refund" :
+                           {
+                              "ADULT" :
+                                 {
+                                    "refundableBeforeDeparture" : false,
+                                    "refundableAfterDeparture" : false
+                                 }
+                           }
+                     },
+                },
+                {
+                  "hasExtendedFare" : false,
+                  "flight" :
+                     {
+                        "carrier" :
+                           {
+                              "uid" : "SU1",
+                              "caption" : "Аэрофлот - российские авиалинии",
+                              "airlineCode" : "SU"
+                           },
+                        "price" :
+                           {
+                              "total" :
+                                 {
+                                    "amount" : "33697",
+                                    "currency" : "руб.",
+                                    "currencyCode" : "RUB"
+                                 },
+                              "totalFeeAndTaxes" :
+                                 {
+                                    "amount" : "15987.00",
+                                    "currency" : "руб.",
+                                    "currencyCode" : "RUB"
+                                 },
+                              "rates" :
+                                 {
+                                    "totalUsd" :
+                                       {
+                                          "amount" : "418.60",
+                                          "currencyCode" : "EUR"
+                                       },
+                                    "totalEur" :
+                                       {
+                                          "amount" : "474.61",
+                                          "currencyCode" : "USD"
+                                       }
+                                 },
+                              "passengerPrices" :
+                                 [
+                                    {
+                                       "total" :
+                                          {
+                                             "amount" : "33697.00",
+                                             "currency" : "руб.",
+                                             "currencyCode" : "RUB"
+                                          },
+                                       "passengerType" :
+                                          {
+                                             "uid" : "ADULT",
+                                             "caption" : "Взрослый"
+                                          },
+                                       "singlePassengerTotal" :
+                                          {
+                                             "amount" : "33697.00",
+                                             "currency" : "руб.",
+                                             "currencyCode" : "RUB"
+                                          },
+                                       "passengerCount" : 1,
+                                       "tariff" :
+                                          {
+                                             "amount" : "17710.00",
+                                             "currency" : "руб.",
+                                             "currencyCode" : "RUB"
+                                          },
+                                       "feeAndTaxes" :
+                                          {
+                                             "amount" : "15987.00",
+                                             "currency" : "руб.",
+                                             "currencyCode" : "RUB"
+                                          }
+                                    }
+                                 ]
+                           },
+                        "servicesStatuses" :
+                           {
+                              "baggage" :
+                                 {
+                                    "uid" : "OFF",
+                                    "caption" : "Недоступно"
+                                 },
+                              "exchange" :
+                                 {
+                                    "uid" : "PAID",
+                                    "caption" : "Платно"
+                                 },
+                              "refund" :
+                                 {
+                                    "uid" : "OFF",
+                                    "caption" : "Недоступно"
+                                 }
+                           },
+                        "legs" :
+                           [
+                              {
+                                 "duration" : 255,
+                                 "segments" :
+                                    [
+                                       {
+                                          "classOfServiceCode" : "L",
+                                          "classOfService" :
+                                             {
+                                                "uid" : "ECONOMY",
+                                                "caption" : "Эконом"
+                                             },
+                                          "departureAirport" :
+                                             {
+                                                "uid" : "SVO",
+                                                "caption" : "ШЕРЕМЕТЬЕВО"
+                                             },
+                                          "departureCity" :
+                                             {
+                                                "uid" : "MOW",
+                                                "caption" : "Москва"
+                                             },
+                                          "aircraft" :
+                                             {
+                                                "uid" : "321",
+                                                "caption" : "АЭРОБУС321"
+                                             },
+                                          "travelDuration" : 255,
+                                          "arrivalCity" :
+                                             {
+                                                "uid" : "LON",
+                                                "caption" : "ЛОНДОН"
+                                             },
+                                          "arrivalDate" : "2020-08-18T21:25:00",
+                                          "flightNumber" : "2584",
+                                          "techStopInfos" :
+                                             [
+                                             ],
+                                          "departureDate" : "2020-08-18T19:10:00",
+                                          "stops" : 0,
+                                          "servicesDetails" :
+                                             {
+                                                "freeCabinLuggage" :
+                                                   {
+                                                   },
+                                                "paidCabinLuggage" :
+                                                   {
+                                                   },
+                                                "tariffName" : "ECONOMY LITE",
+                                                "fareBasis" :
+                                                   {
+                                                      "ADULT" : "LNB"
+                                                   },
+                                                "freeLuggage" :
+                                                   {
+                                                      "ADULT" :
+                                                         {
+                                                            "nil" : true
+                                                         }
+                                                   },
+                                                "paidLuggage" :
+                                                   {
+                                                   }
+                                             },
+                                          "airline" :
+                                             {
+                                                "uid" : "SU1",
+                                                "caption" : "Аэрофлот - российские авиалинии",
+                                                "airlineCode" : "SU"
+                                             },
+                                          "starting" : true,
+                                          "arrivalAirport" :
+                                             {
+                                                "uid" : "LHR",
+                                                "caption" : "Лондон, Хитроу"
+                                             }
+                                       }
+                                    ]
+                              },
+                              {
+                                 "duration" : 235,
+                                 "segments" :
+                                    [
+                                       {
+                                          "classOfServiceCode" : "L",
+                                          "classOfService" :
+                                             {
+                                                "uid" : "ECONOMY",
+                                                "caption" : "Эконом"
+                                             },
+                                          "departureAirport" :
+                                             {
+                                                "uid" : "LHR",
+                                                "caption" : "Лондон, Хитроу"
+                                             },
+                                          "departureCity" :
+                                             {
+                                                "uid" : "LON",
+                                                "caption" : "ЛОНДОН"
+                                             },
+                                          "aircraft" :
+                                             {
+                                                "uid" : "321",
+                                                "caption" : "АЭРОБУС321"
+                                             },
+                                          "travelDuration" : 235,
+                                          "arrivalCity" :
+                                             {
+                                                "uid" : "MOW",
+                                                "caption" : "Москва"
+                                             },
+                                          "arrivalDate" : "2020-08-19T16:35:00",
+                                          "flightNumber" : "2581",
+                                          "techStopInfos" :
+                                             [
+                                             ],
+                                          "departureDate" : "2020-08-19T10:40:00",
+                                          "stops" : 0,
+                                          "servicesDetails" :
+                                             {
+                                                "freeCabinLuggage" :
+                                                   {
+                                                   },
+                                                "paidCabinLuggage" :
+                                                   {
+                                                   },
+                                                "tariffName" : "ECONOMY LITE",
+                                                "fareBasis" :
+                                                   {
+                                                      "ADULT" : "LNB"
+                                                   },
+                                                "freeLuggage" :
+                                                   {
+                                                      "ADULT" :
+                                                         {
+                                                            "nil" : true
+                                                         }
+                                                   },
+                                                "paidLuggage" :
+                                                   {
+                                                   }
+                                             },
+                                          "airline" :
+                                             {
+                                                "uid" : "SU1",
+                                                "caption" : "Аэрофлот - российские авиалинии",
+                                                "airlineCode" : "SU"
+                                             },
+                                          "starting" : true,
+                                          "arrivalAirport" :
+                                             {
+                                                "uid" : "SVO",
+                                                "caption" : "ШЕРЕМЕТЬЕВО"
+                                             }
+                                       }
+                                    ]
+                              }
+                           ],
+                        "airlineAlliance" :
+                           {
+                              "uid" : "*S",
+                              "caption" : "Skyteam"
+                           },
+                        "exchange" :
+                           {
+                              "ADULT" :
+                                 {
+                                    "exchangeableBeforeDeparture" : true,
+                                    "exchangeAfterDeparture" :
+                                       {
+                                          "amount" : "2978",
+                                          "currency" : "руб.",
+                                          "currencyCode" : "RUB"
+                                       },
+                                    "exchangeBeforeDeparture" :
+                                       {
+                                          "amount" : "2978",
+                                          "currency" : "руб.",
+                                          "currencyCode" : "RUB"
+                                       },
+                                    "exchangeableAfterDeparture" : true
+                                 }
+                           },
+                        "isTripartiteContractDiscountApplied" : false,
+                        "international" : false,
+                        "seats" :
+                           [
+                              {
+                                 "count" : 1,
+                                 "type" :
+                                    {
+                                       "uid" : "ADULT",
+                                       "caption" : "Взрослый"
+                                    }
+                              }
+                           ],
+                        "refund" :
+                           {
+                              "ADULT" :
+                                 {
+                                    "refundableBeforeDeparture" : false,
+                                    "refundableAfterDeparture" : false
+                                 }
+                           }
+                     },
+                },
+                {
+                  "hasExtendedFare" : false,
+                  "flight" :
+                     {
+                        "carrier" :
+                           {
+                              "uid" : "LO",
+                              "caption" : "LOT Polish Airlines",
+                              "airlineCode" : "LO"
+                           },
+                        "price" :
+                           {
+                              "total" :
+                                 {
+                                    "amount" : "33621",
+                                    "currency" : "руб.",
+                                    "currencyCode" : "RUB"
+                                 },
+                              "totalFeeAndTaxes" :
+                                 {
+                                    "amount" : "9951.00",
+                                    "currency" : "руб.",
+                                    "currencyCode" : "RUB"
+                                 },
+                              "rates" :
+                                 {
+                                    "totalUsd" :
+                                       {
+                                          "amount" : "417.65",
+                                          "currencyCode" : "EUR"
+                                       },
+                                    "totalEur" :
+                                       {
+                                          "amount" : "473.54",
+                                          "currencyCode" : "USD"
+                                       }
+                                 },
+                              "passengerPrices" :
+                                 [
+                                    {
+                                       "total" :
+                                          {
+                                             "amount" : "33621.00",
+                                             "currency" : "руб.",
+                                             "currencyCode" : "RUB"
+                                          },
+                                       "passengerType" :
+                                          {
+                                             "uid" : "ADULT",
+                                             "caption" : "Взрослый"
+                                          },
+                                       "singlePassengerTotal" :
+                                          {
+                                             "amount" : "33621.00",
+                                             "currency" : "руб.",
+                                             "currencyCode" : "RUB"
+                                          },
+                                       "passengerCount" : 1,
+                                       "tariff" :
+                                          {
+                                             "amount" : "23670.00",
+                                             "currency" : "руб.",
+                                             "currencyCode" : "RUB"
+                                          },
+                                       "feeAndTaxes" :
+                                          {
+                                             "amount" : "9951.00",
+                                             "currency" : "руб.",
+                                             "currencyCode" : "RUB"
+                                          }
+                                    }
+                                 ]
+                           },
+                        "servicesStatuses" :
+                           {
+                              "baggage" :
+                                 {
+                                    "uid" : "OFF",
+                                    "caption" : "Недоступно"
+                                 },
+                              "exchange" :
+                                 {
+                                    "uid" : "PAID",
+                                    "caption" : "Платно"
+                                 },
+                              "refund" :
+                                 {
+                                    "uid" : "OFF",
+                                    "caption" : "Недоступно"
+                                 }
+                           },
+                        "legs" :
+                           [
+                              {
+                                 "duration" : 1485,
+                                 "segments" :
+                                    [
+                                       {
+                                          "classOfServiceCode" : "V",
+                                          "classOfService" :
+                                             {
+                                                "uid" : "ECONOMY",
+                                                "caption" : "Эконом"
+                                             },
+                                          "departureAirport" :
+                                             {
+                                                "uid" : "SVO",
+                                                "caption" : "ШЕРЕМЕТЬЕВО"
+                                             },
+                                          "departureCity" :
+                                             {
+                                                "uid" : "MOW",
+                                                "caption" : "Москва"
+                                             },
+                                          "aircraft" :
+                                             {
+                                                "uid" : "SU9",
+                                                "caption" : "SSJ100-95"
+                                             },
+                                          "travelDuration" : 130,
+                                          "arrivalCity" :
+                                             {
+                                                "uid" : "WAW",
+                                                "caption" : "ВАРШАВА (ФРЕДЕРИК ШОПЕН)"
+                                             },
+                                          "arrivalDate" : "2020-08-18T11:50:00",
+                                          "flightNumber" : "5678",
+                                          "techStopInfos" :
+                                             [
+                                             ],
+                                          "departureDate" : "2020-08-18T10:40:00",
+                                          "stops" : 0,
+                                          "servicesDetails" :
+                                             {
+                                                "freeCabinLuggage" :
+                                                   {
+                                                   },
+                                                "paidCabinLuggage" :
+                                                   {
+                                                   },
+                                                "tariffName" : "ECONOMY STANDARD",
+                                                "fareBasis" :
+                                                   {
+                                                      "ADULT" : "VSTDPOF0"
+                                                   },
+                                                "freeLuggage" :
+                                                   {
+                                                      "ADULT" :
+                                                         {
+                                                            "pieces" : 1,
+                                                            "nil" : false,
+                                                            "unit" : "шт"
+                                                         }
+                                                   },
+                                                "paidLuggage" :
+                                                   {
+                                                   }
+                                             },
+                                          "airline" :
+                                             {
+                                                "uid" : "LO",
+                                                "caption" : "LOT Polish Airlines",
+                                                "airlineCode" : "LO"
+                                             },
+                                          "starting" : true,
+                                          "arrivalAirport" :
+                                             {
+                                                "uid" : "WAW",
+                                                "caption" : "ВАРШАВА (ФРЕДЕРИК ШОПЕН)"
+                                             },
+                                          "operatingAirline" :
+                                             {
+                                                "uid" : "SU1",
+                                                "caption" : "Аэрофлот - российские авиалинии",
+                                                "airlineCode" : "SU"
+                                             }
+                                       },
+                                       {
+                                          "classOfServiceCode" : "V",
+                                          "classOfService" :
+                                             {
+                                                "uid" : "ECONOMY",
+                                                "caption" : "Эконом"
+                                             },
+                                          "departureAirport" :
+                                             {
+                                                "uid" : "WAW",
+                                                "caption" : "ВАРШАВА (ФРЕДЕРИК ШОПЕН)"
+                                             },
+                                          "departureCity" :
+                                             {
+                                                "uid" : "WAW",
+                                                "caption" : "ВАРШАВА (ФРЕДЕРИК ШОПЕН)"
+                                             },
+                                          "aircraft" :
+                                             {
+                                                "uid" : "Е95",
+                                                "caption" : "ЭМБРАЕР 195"
+                                             },
+                                          "travelDuration" : 175,
+                                          "arrivalCity" :
+                                             {
+                                                "uid" : "LON",
+                                                "caption" : "ЛОНДОН"
+                                             },
+                                          "arrivalDate" : "2020-08-19T09:25:00",
+                                          "flightNumber" : "281",
+                                          "techStopInfos" :
+                                             [
+                                             ],
+                                          "departureDate" : "2020-08-19T07:30:00",
+                                          "stops" : 0,
+                                          "servicesDetails" :
+                                             {
+                                                "freeCabinLuggage" :
+                                                   {
+                                                   },
+                                                "paidCabinLuggage" :
+                                                   {
+                                                   },
+                                                "tariffName" : "ECONOMY STANDARD",
+                                                "fareBasis" :
+                                                   {
+                                                      "ADULT" : "VSTDPOF0"
+                                                   },
+                                                "freeLuggage" :
+                                                   {
+                                                      "ADULT" :
+                                                         {
+                                                            "pieces" : 1,
+                                                            "nil" : false,
+                                                            "unit" : "шт"
+                                                         }
+                                                   },
+                                                "paidLuggage" :
+                                                   {
+                                                   }
+                                             },
+                                          "airline" :
+                                             {
+                                                "uid" : "LO",
+                                                "caption" : "LOT Polish Airlines",
+                                                "airlineCode" : "LO"
+                                             },
+                                          "starting" : false,
+                                          "arrivalAirport" :
+                                             {
+                                                "uid" : "LHR",
+                                                "caption" : "Лондон, Хитроу"
+                                             }
+                                       }
+                                    ]
+                              },
+                              {
+                                 "duration" : 1415,
+                                 "segments" :
+                                    [
+                                       {
+                                          "classOfServiceCode" : "V",
+                                          "classOfService" :
+                                             {
+                                                "uid" : "ECONOMY",
+                                                "caption" : "Эконом"
+                                             },
+                                          "departureAirport" :
+                                             {
+                                                "uid" : "LHR",
+                                                "caption" : "Лондон, Хитроу"
+                                             },
+                                          "departureCity" :
+                                             {
+                                                "uid" : "LON",
+                                                "caption" : "ЛОНДОН"
+                                             },
+                                          "aircraft" :
+                                             {
+                                                "uid" : "Е95",
+                                                "caption" : "ЭМБРАЕР 195"
+                                             },
+                                          "travelDuration" : 155,
+                                          "arrivalCity" :
+                                             {
+                                                "uid" : "WAW",
+                                                "caption" : "ВАРШАВА (ФРЕДЕРИК ШОПЕН)"
+                                             },
+                                          "arrivalDate" : "2020-08-19T21:45:00",
+                                          "flightNumber" : "280",
+                                          "techStopInfos" :
+                                             [
+                                             ],
+                                          "departureDate" : "2020-08-19T18:10:00",
+                                          "stops" : 0,
+                                          "servicesDetails" :
+                                             {
+                                                "freeCabinLuggage" :
+                                                   {
+                                                   },
+                                                "paidCabinLuggage" :
+                                                   {
+                                                   },
+                                                "tariffName" : "ECONOMY SAVER",
+                                                "fareBasis" :
+                                                   {
+                                                      "ADULT" : "VSAVP0"
+                                                   },
+                                                "freeLuggage" :
+                                                   {
+                                                      "ADULT" :
+                                                         {
+                                                            "nil" : true
+                                                         }
+                                                   },
+                                                "paidLuggage" :
+                                                   {
+                                                   }
+                                             },
+                                          "airline" :
+                                             {
+                                                "uid" : "LO",
+                                                "caption" : "LOT Polish Airlines",
+                                                "airlineCode" : "LO"
+                                             },
+                                          "starting" : true,
+                                          "arrivalAirport" :
+                                             {
+                                                "uid" : "WAW",
+                                                "caption" : "ВАРШАВА (ФРЕДЕРИК ШОПЕН)"
+                                             }
+                                       },
+                                       {
+                                          "classOfServiceCode" : "V",
+                                          "classOfService" :
+                                             {
+                                                "uid" : "ECONOMY",
+                                                "caption" : "Эконом"
+                                             },
+                                          "departureAirport" :
+                                             {
+                                                "uid" : "WAW",
+                                                "caption" : "ВАРШАВА (ФРЕДЕРИК ШОПЕН)"
+                                             },
+                                          "departureCity" :
+                                             {
+                                                "uid" : "WAW",
+                                                "caption" : "ВАРШАВА (ФРЕДЕРИК ШОПЕН)"
+                                             },
+                                          "aircraft" :
+                                             {
+                                                "uid" : "Е75",
+                                                "caption" : "ЭМБРАЕР 175"
+                                             },
+                                          "travelDuration" : 130,
+                                          "arrivalCity" :
+                                             {
+                                                "uid" : "MOW",
+                                                "caption" : "Москва"
+                                             },
+                                          "arrivalDate" : "2020-08-20T19:45:00",
+                                          "flightNumber" : "677",
+                                          "techStopInfos" :
+                                             [
+                                             ],
+                                          "departureDate" : "2020-08-20T16:35:00",
+                                          "stops" : 0,
+                                          "servicesDetails" :
+                                             {
+                                                "freeCabinLuggage" :
+                                                   {
+                                                   },
+                                                "paidCabinLuggage" :
+                                                   {
+                                                   },
+                                                "tariffName" : "ECONOMY SAVER",
+                                                "fareBasis" :
+                                                   {
+                                                      "ADULT" : "VSAVP0"
+                                                   },
+                                                "freeLuggage" :
+                                                   {
+                                                      "ADULT" :
+                                                         {
+                                                            "nil" : true
+                                                         }
+                                                   },
+                                                "paidLuggage" :
+                                                   {
+                                                   }
+                                             },
+                                          "airline" :
+                                             {
+                                                "uid" : "LO",
+                                                "caption" : "LOT Polish Airlines",
+                                                "airlineCode" : "LO"
+                                             },
+                                          "starting" : false,
+                                          "arrivalAirport" :
+                                             {
+                                                "uid" : "SVO",
+                                                "caption" : "ШЕРЕМЕТЬЕВО"
+                                             }
+                                       }
+                                    ]
+                              }
+                           ],
+                        "exchange" :
+                           {
+                              "ADULT" :
+                                 {
+                                    "exchangeableBeforeDeparture" : true,
+                                    "exchangeAfterDeparture" :
+                                       {
+                                          "amount" : "5635",
+                                          "currency" : "руб.",
+                                          "currencyCode" : "RUB"
+                                       },
+                                    "exchangeBeforeDeparture" :
+                                       {
+                                          "amount" : "5635",
+                                          "currency" : "руб.",
+                                          "currencyCode" : "RUB"
+                                       },
+                                    "exchangeableAfterDeparture" : true
+                                 }
+                           },
+                        "isTripartiteContractDiscountApplied" : false,
+                        "international" : false,
+                        "seats" :
+                           [
+                              {
+                                 "count" : 1,
+                                 "type" :
+                                    {
+                                       "uid" : "ADULT",
+                                       "caption" : "Взрослый"
+                                    }
+                              }
+                           ],
+                        "refund" :
+                           {
+                              "ADULT" :
+                                 {
+                                    "refundableBeforeDeparture" : false,
+                                    "refundableAfterDeparture" : false
+                                 }
+                           }
+                     },
+                },
+                {
+                  "hasExtendedFare" : false,
+                  "flight" :
+                     {
+                        "carrier" :
+                           {
+                              "uid" : "TK",
+                              "caption" : "TURK HAVA YOLLARI A.O.",
+                              "airlineCode" : "TK"
+                           },
+                        "price" :
+                           {
+                              "total" :
+                                 {
+                                    "amount" : "31778",
+                                    "currency" : "руб.",
+                                    "currencyCode" : "RUB"
+                                 },
+                              "totalFeeAndTaxes" :
+                                 {
+                                    "amount" : "19703.00",
+                                    "currency" : "руб.",
+                                    "currencyCode" : "RUB"
+                                 },
+                              "rates" :
+                                 {
+                                    "totalUsd" :
+                                       {
+                                          "amount" : "394.76",
+                                          "currencyCode" : "EUR"
+                                       },
+                                    "totalEur" :
+                                       {
+                                          "amount" : "447.58",
+                                          "currencyCode" : "USD"
+                                       }
+                                 },
+                              "passengerPrices" :
+                                 [
+                                    {
+                                       "total" :
+                                          {
+                                             "amount" : "31778.00",
+                                             "currency" : "руб.",
+                                             "currencyCode" : "RUB"
+                                          },
+                                       "passengerType" :
+                                          {
+                                             "uid" : "ADULT",
+                                             "caption" : "Взрослый"
+                                          },
+                                       "singlePassengerTotal" :
+                                          {
+                                             "amount" : "31778.00",
+                                             "currency" : "руб.",
+                                             "currencyCode" : "RUB"
+                                          },
+                                       "passengerCount" : 1,
+                                       "tariff" :
+                                          {
+                                             "amount" : "12075.00",
+                                             "currency" : "руб.",
+                                             "currencyCode" : "RUB"
+                                          },
+                                       "feeAndTaxes" :
+                                          {
+                                             "amount" : "19703.00",
+                                             "currency" : "руб.",
+                                             "currencyCode" : "RUB"
+                                          }
+                                    }
+                                 ]
+                           },
+                        "servicesStatuses" :
+                           {
+                              "baggage" :
+                                 {
+                                    "uid" : "FREE",
+                                    "caption" : "Бесплатно"
+                                 },
+                              "exchange" :
+                                 {
+                                    "uid" : "FREE",
+                                    "caption" : "Бесплатно"
+                                 },
+                              "refund" :
+                                 {
+                                    "uid" : "OFF",
+                                    "caption" : "Недоступно"
+                                 }
+                           },
+                        "legs" :
+                           [
+                              {
+                                 "duration" : 900,
+                                 "segments" :
+                                    [
+                                       {
+                                          "classOfServiceCode" : "Q",
+                                          "classOfService" :
+                                             {
+                                                "uid" : "ECONOMY",
+                                                "caption" : "Эконом"
+                                             },
+                                          "departureAirport" :
+                                             {
+                                                "uid" : "VKO",
+                                                "caption" : "ВНУКОВО"
+                                             },
+                                          "departureCity" :
+                                             {
+                                                "uid" : "MOW",
+                                                "caption" : "Москва"
+                                             },
+                                          "aircraft" :
+                                             {
+                                                "uid" : "32Б",
+                                                "caption" : "Аэробус А321 Пассажирский (шарклетс)"
+                                             },
+                                          "travelDuration" : 185,
+                                          "arrivalCity" :
+                                             {
+                                                "uid" : "IST",
+                                                "caption" : "СТАМБУЛ"
+                                             },
+                                          "arrivalDate" : "2020-08-18T23:25:00",
+                                          "flightNumber" : "416",
+                                          "techStopInfos" :
+                                             [
+                                             ],
+                                          "departureDate" : "2020-08-18T20:20:00",
+                                          "stops" : 0,
+                                          "servicesDetails" :
+                                             {
+                                                "freeCabinLuggage" :
+                                                   {
+                                                   },
+                                                "paidCabinLuggage" :
+                                                   {
+                                                   },
+                                                "fareBasis" :
+                                                   {
+                                                      "ADULT" : "QN2PX"
+                                                   },
+                                                "freeLuggage" :
+                                                   {
+                                                      "ADULT" :
+                                                         {
+                                                            "pieces" : 30,
+                                                            "nil" : false,
+                                                            "unit" : "кг"
+                                                         }
+                                                   },
+                                                "paidLuggage" :
+                                                   {
+                                                   }
+                                             },
+                                          "airline" :
+                                             {
+                                                "uid" : "TK",
+                                                "caption" : "TURK HAVA YOLLARI A.O.",
+                                                "airlineCode" : "TK"
+                                             },
+                                          "starting" : true,
+                                          "arrivalAirport" :
+                                             {
+                                                "uid" : "IST",
+                                                "caption" : "СТАМБУЛ"
+                                             }
+                                       },
+                                       {
+                                          "classOfServiceCode" : "Q",
+                                          "classOfService" :
+                                             {
+                                                "uid" : "ECONOMY",
+                                                "caption" : "Эконом"
+                                             },
+                                          "departureAirport" :
+                                             {
+                                                "uid" : "IST",
+                                                "caption" : "СТАМБУЛ"
+                                             },
+                                          "departureCity" :
+                                             {
+                                                "uid" : "IST",
+                                                "caption" : "СТАМБУЛ"
+                                             },
+                                          "aircraft" :
+                                             {
+                                                "uid" : "77В",
+                                                "caption" : "Боинг 777-300ЕР"
+                                             },
+                                          "travelDuration" : 240,
+                                          "arrivalCity" :
+                                             {
+                                                "uid" : "LON",
+                                                "caption" : "ЛОНДОН"
+                                             },
+                                          "arrivalDate" : "2020-08-19T09:20:00",
+                                          "flightNumber" : "1979",
+                                          "techStopInfos" :
+                                             [
+                                             ],
+                                          "departureDate" : "2020-08-19T07:20:00",
+                                          "stops" : 0,
+                                          "servicesDetails" :
+                                             {
+                                                "freeCabinLuggage" :
+                                                   {
+                                                   },
+                                                "paidCabinLuggage" :
+                                                   {
+                                                   },
+                                                "fareBasis" :
+                                                   {
+                                                      "ADULT" : "QN2PX"
+                                                   },
+                                                "freeLuggage" :
+                                                   {
+                                                      "ADULT" :
+                                                         {
+                                                            "pieces" : 30,
+                                                            "nil" : false,
+                                                            "unit" : "кг"
+                                                         }
+                                                   },
+                                                "paidLuggage" :
+                                                   {
+                                                   }
+                                             },
+                                          "airline" :
+                                             {
+                                                "uid" : "TK",
+                                                "caption" : "TURK HAVA YOLLARI A.O.",
+                                                "airlineCode" : "TK"
+                                             },
+                                          "starting" : false,
+                                          "arrivalAirport" :
+                                             {
+                                                "uid" : "LHR",
+                                                "caption" : "Лондон, Хитроу"
+                                             }
+                                       }
+                                    ]
+                              },
+                              {
+                                 "duration" : 1025,
+                                 "segments" :
+                                    [
+                                       {
+                                          "classOfServiceCode" : "V",
+                                          "classOfService" :
+                                             {
+                                                "uid" : "ECONOMY",
+                                                "caption" : "Эконом"
+                                             },
+                                          "departureAirport" :
+                                             {
+                                                "uid" : "STN",
+                                                "caption" : "Лондон, Станстед"
+                                             },
+                                          "departureCity" :
+                                             {
+                                                "uid" : "LON",
+                                                "caption" : "ЛОНДОН"
+                                             },
+                                          "aircraft" :
+                                             {
+                                                "uid" : "73Х",
+                                                "caption" : "Боинг 737-800 (винглетс) Пассажирский/BBJ2"
+                                             },
+                                          "travelDuration" : 230,
+                                          "arrivalCity" :
+                                             {
+                                                "uid" : "IST",
+                                                "caption" : "СТАМБУЛ"
+                                             },
+                                          "arrivalDate" : "2020-08-19T20:40:00",
+                                          "flightNumber" : "7821",
+                                          "techStopInfos" :
+                                             [
+                                             ],
+                                          "departureDate" : "2020-08-19T14:50:00",
+                                          "stops" : 0,
+                                          "servicesDetails" :
+                                             {
+                                                "freeCabinLuggage" :
+                                                   {
+                                                   },
+                                                "paidCabinLuggage" :
+                                                   {
+                                                   },
+                                                "fareBasis" :
+                                                   {
+                                                      "ADULT" : "VN2XPB"
+                                                   },
+                                                "freeLuggage" :
+                                                   {
+                                                      "ADULT" :
+                                                         {
+                                                            "pieces" : 30,
+                                                            "nil" : false,
+                                                            "unit" : "кг"
+                                                         }
+                                                   },
+                                                "paidLuggage" :
+                                                   {
+                                                   }
+                                             },
+                                          "airline" :
+                                             {
+                                                "uid" : "TK",
+                                                "caption" : "TURK HAVA YOLLARI A.O.",
+                                                "airlineCode" : "TK"
+                                             },
+                                          "starting" : true,
+                                          "arrivalAirport" :
+                                             {
+                                                "uid" : "SAW",
+                                                "caption" : "САБИХА ГОКЦЕН"
+                                             }
+                                       },
+                                       {
+                                          "classOfServiceCode" : "V",
+                                          "classOfService" :
+                                             {
+                                                "uid" : "ECONOMY",
+                                                "caption" : "Эконом"
+                                             },
+                                          "departureAirport" :
+                                             {
+                                                "uid" : "IST",
+                                                "caption" : "СТАМБУЛ"
+                                             },
+                                          "departureCity" :
+                                             {
+                                                "uid" : "IST",
+                                                "caption" : "СТАМБУЛ"
+                                             },
+                                          "aircraft" :
+                                             {
+                                                "uid" : "333",
+                                                "caption" : "А330-300"
+                                             },
+                                          "travelDuration" : 165,
+                                          "arrivalCity" :
+                                             {
+                                                "uid" : "MOW",
+                                                "caption" : "Москва"
+                                             },
+                                          "arrivalDate" : "2020-08-20T09:55:00",
+                                          "flightNumber" : "413",
+                                          "techStopInfos" :
+                                             [
+                                             ],
+                                          "departureDate" : "2020-08-20T07:10:00",
+                                          "stops" : 0,
+                                          "servicesDetails" :
+                                             {
+                                                "freeCabinLuggage" :
+                                                   {
+                                                   },
+                                                "paidCabinLuggage" :
+                                                   {
+                                                   },
+                                                "fareBasis" :
+                                                   {
+                                                      "ADULT" : "VN2XPB"
+                                                   },
+                                                "freeLuggage" :
+                                                   {
+                                                      "ADULT" :
+                                                         {
+                                                            "pieces" : 30,
+                                                            "nil" : false,
+                                                            "unit" : "кг"
+                                                         }
+                                                   },
+                                                "paidLuggage" :
+                                                   {
+                                                   }
+                                             },
+                                          "airline" :
+                                             {
+                                                "uid" : "TK",
+                                                "caption" : "TURK HAVA YOLLARI A.O.",
+                                                "airlineCode" : "TK"
+                                             },
+                                          "starting" : false,
+                                          "arrivalAirport" :
+                                             {
+                                                "uid" : "VKO",
+                                                "caption" : "ВНУКОВО"
+                                             }
+                                       }
+                                    ]
+                              }
+                           ],
+                        "exchange" :
+                           {
+                              "ADULT" :
+                                 {
+                                    "exchangeableBeforeDeparture" : true,
+                                    "exchangeAfterDeparture" :
+                                       {
+                                          "amount" : "0",
+                                          "currency" : "руб.",
+                                          "currencyCode" : "RUB"
+                                       },
+                                    "exchangeBeforeDeparture" :
+                                       {
+                                          "amount" : "0",
+                                          "currency" : "руб.",
+                                          "currencyCode" : "RUB"
+                                       },
+                                    "exchangeableAfterDeparture" : true
+                                 }
+                           },
+                        "isTripartiteContractDiscountApplied" : false,
+                        "international" : false,
+                        "seats" :
+                           [
+                              {
+                                 "count" : 1,
+                                 "type" :
+                                    {
+                                       "uid" : "ADULT",
+                                       "caption" : "Взрослый"
+                                    }
+                              }
+                           ],
+                        "refund" :
+                           {
+                              "ADULT" :
+                                 {
+                                    "refundableBeforeDeparture" : false,
+                                    "refundableAfterDeparture" : false
+                                 }
+                           }
+                     },
+                },
+            ],
+
+            priceFrom: 0,
+            priceUp: null,
     };
 
 
@@ -2268,6 +3896,12 @@ const SET_TRAVELS = "SET_TRAVELS";
         }
     }
 
-    export const searchPageReducerAC = () => ({type: SET_TRAVELS});
+      export const searchPageReducerAC = () => ({type: SET_TRAVELS});
+
+      export const setPriceFromAC = () => ({type: SET_PRICE_FROM});
+
+      export const setPriceUpAC = () => ({type: SET_PRICE_UP})
+
+      
 
     export default searchPageReducer;
