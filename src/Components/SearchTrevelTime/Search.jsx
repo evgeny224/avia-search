@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import arrow from "../../Assets/Images/arrow.png";
 import clock from "../../Assets/Images/clock.png"
 import line from "../../Assets/Images/line.png";
@@ -10,10 +10,17 @@ import style from "./Search.module.css";
     const Search = (props) => {
 
 
-        const [ dataFromState ] = useState(props.searchPage.flights);
+        let state = props.searchPage.flights;
+
+        let priceFrom = props.searchPage.priceFrom;
+
+        let priceUp = props.searchPage.priceUp;
 
 
-        let timeTravelFilter = dataFromState.sort(function(a, b) {
+        let newState = state.filter(item => item.flight.price.total.amount >= priceFrom && item.flight.price.total.amount <= priceUp);
+
+
+        let timeTravelFilter = newState.sort(function(a, b) {
             if (a.flight.legs[0].segments[0].travelDuration > b.flight.legs[0].segments[0].travelDuration) {
                 return 1;
             }

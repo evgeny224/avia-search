@@ -20,7 +20,7 @@ const SET_PRICE_UP = "SET_PRICE_UP";
                            {
                               total :
                                  {
-                                    "amount" : "105368",
+                                    "amount" : 105368,
                                     "currency" : "руб.",
                                     "currencyCode" : "RUB"
                                  },
@@ -471,7 +471,7 @@ const SET_PRICE_UP = "SET_PRICE_UP";
                              {
                                 "total" :
                                    {
-                                      "amount" : "36491",
+                                      "amount" : 36491,
                                       "currency" : "руб.",
                                       "currencyCode" : "RUB"
                                    },
@@ -914,7 +914,7 @@ const SET_PRICE_UP = "SET_PRICE_UP";
                                  {
                                     "total" :
                                        {
-                                          "amount" : "104598",
+                                          "amount" : 104598,
                                           "currency" : "руб.",
                                           "currencyCode" : "RUB"
                                        },
@@ -1365,7 +1365,7 @@ const SET_PRICE_UP = "SET_PRICE_UP";
                                  {
                                     "total" :
                                        {
-                                          "amount" : "33560",
+                                          "amount" : 33560,
                                           "currency" : "руб.",
                                           "currencyCode" : "RUB"
                                        },
@@ -1825,7 +1825,7 @@ const SET_PRICE_UP = "SET_PRICE_UP";
                                  {
                                     "total" :
                                        {
-                                          "amount" : "35224",
+                                          "amount" : 35224,
                                           "currency" : "руб.",
                                           "currencyCode" : "RUB"
                                        },
@@ -2268,7 +2268,7 @@ const SET_PRICE_UP = "SET_PRICE_UP";
                            {
                               "total" :
                                  {
-                                    "amount" : "21049",
+                                    "amount" : 21049,
                                     "currency" : "руб.",
                                     "currencyCode" : "RUB"
                                  },
@@ -2705,7 +2705,7 @@ const SET_PRICE_UP = "SET_PRICE_UP";
                            {
                               "total" :
                                  {
-                                    "amount" : "33697",
+                                    "amount" : 33697,
                                     "currency" : "руб.",
                                     "currencyCode" : "RUB"
                                  },
@@ -3003,7 +3003,7 @@ const SET_PRICE_UP = "SET_PRICE_UP";
                            {
                               "total" :
                                  {
-                                    "amount" : "33621",
+                                    "amount" : 33621,
                                     "currency" : "руб.",
                                     "currencyCode" : "RUB"
                                  },
@@ -3450,7 +3450,7 @@ const SET_PRICE_UP = "SET_PRICE_UP";
                            {
                               "total" :
                                  {
-                                    "amount" : "31778",
+                                    "amount" : 31778,
                                     "currency" : "руб.",
                                     "currencyCode" : "RUB"
                                  },
@@ -3880,7 +3880,7 @@ const SET_PRICE_UP = "SET_PRICE_UP";
             ],
 
             priceFrom: 0,
-            priceUp: null,
+            priceUp: 1000000,
     };
 
 
@@ -3891,6 +3891,16 @@ const SET_PRICE_UP = "SET_PRICE_UP";
         switch(action.type){
             case SET_TRAVELS:
                 return {state}
+            case SET_PRICE_FROM:
+               return {
+                  ...state,
+                  priceFrom: action.newpriceFrom
+               }
+            case SET_PRICE_UP:
+               return {
+                  ...state,
+                  priceUp: action.newpriceUp
+               }
             default:
                 return state;
         }
@@ -3898,10 +3908,9 @@ const SET_PRICE_UP = "SET_PRICE_UP";
 
       export const searchPageReducerAC = () => ({type: SET_TRAVELS});
 
-      export const setPriceFromAC = () => ({type: SET_PRICE_FROM});
+      export const setPriceFromAC = (newpriceFrom) => ({type: SET_PRICE_FROM, newpriceFrom: newpriceFrom});
 
-      export const setPriceUpAC = () => ({type: SET_PRICE_UP})
+      export const setPriceUpAC = (newpriceUp) => ({type: SET_PRICE_UP, newpriceUp: newpriceUp});
 
-      
 
-    export default searchPageReducer;
+      export default searchPageReducer;

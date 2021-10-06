@@ -9,12 +9,23 @@ import style from "./Search.module.css";
 
     const Search = (props) => {
 
-
         let state = props.searchPage.flights;
+
+        let priceFrom = props.searchPage.priceFrom;
+
+        let priceUp = props.searchPage.priceUp;
+
+
+            console.log(props)
+
+
+        let newState = state.filter(item => item.flight.price.total.amount >= priceFrom && item.flight.price.total.amount <= priceUp);
+
+
     
         return(
             <div className = {style.search}>
-                {state.map( travel => {
+                {newState.map( travel => {
                     return <div className = {style.aviaTravel}>
                     <div className = {style.aviaTravelHeader}>
                         <div className = {style.aviaTravelTitle}>

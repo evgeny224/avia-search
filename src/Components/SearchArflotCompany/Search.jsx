@@ -9,13 +9,22 @@ import style from "./Search.module.css";
 
     const Search = (props) => {
 
+        let state = props.searchPage.flights;
 
-        let state = props.searchPage.flights.filter(item => item.flight.carrier.caption ===  "Аэрофлот - российские авиалинии");
+        let priceFrom = props.searchPage.priceFrom;
+
+        let priceUp = props.searchPage.priceUp;
+
+
+        let newState = state.filter(item => item.flight.price.total.amount >= priceFrom && item.flight.price.total.amount <= priceUp);
+
+
+        let newStates = newState.filter(item => item.flight.carrier.caption ===  "Аэрофлот - российские авиалинии");
 
     
         return(
             <div className = {style.search}>
-                {state.map( travel => {
+                {newStates.map( travel => {
                     return <div className = {style.aviaTravel}>
                     <div className = {style.aviaTravelHeader}>
                         <div className = {style.aviaTravelTitle}>

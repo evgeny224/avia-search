@@ -35,6 +35,22 @@ import {  useHistory  } from "react-router-dom";
         history.push("/airflot")
     }
 
+    let addPriceElementFrom = React.createRef();
+
+    let addPriceElementUp = React.createRef();
+
+
+    const onsetPriceFrom = () => {
+        let price = addPriceElementFrom.current.value;
+        props.setPriceFrom(price);
+    }
+
+    const setPriceUp = () => {
+        let price = addPriceElementUp.current.value;
+        props.setPriceUp(price);
+    }
+
+
         return(
             <div className = {style.sidebar}>
                 <div className = {style.title}>
@@ -61,10 +77,10 @@ import {  useHistory  } from "react-router-dom";
                 </label>
                 <div className = {style.amount}>Цена</div>
                 <div className = {style.input}>
-                    От <input type="text" name="sort"  />
+                    От <input type="text" name="sort" ref = {addPriceElementFrom} onChange = {onsetPriceFrom} />
                 </div>
                 <div className = {style.input}>
-                    До <input type="text" name="sort" /> 
+                    До <input type="text" name="sort" ref = {addPriceElementUp} onChange = {setPriceUp}/> 
                 </div>
                 <div className = {style.filtr}>
                     Авиакампании
